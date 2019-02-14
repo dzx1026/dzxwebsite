@@ -1,0 +1,12 @@
+# 大小写敏感，不能使用回车
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/dzxwebsite?characterEncoding=utf8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    show-sql: true   # 用于控制台显示sql语句
+    hibernate:
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
